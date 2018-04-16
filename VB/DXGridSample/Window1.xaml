@@ -1,0 +1,80 @@
+﻿<Window x:Class="DXGridSample.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    Title="Window1" Height="800" Width="1000" WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <Expander Name="infoContainer" DockPanel.Dock="Bottom" Header="Connection Info" 
+                  IsExpanded="True">
+            <StackPanel TextBlock.FontFamily="Courier New">
+                <TextBlock Margin="0,5,0,5" FontSize="16" Foreground="Red" TextWrapping="Wrap">
+                    <TextBlock.Visibility>
+                        <Binding Path="NotInServerMode">
+                            <Binding.Converter>
+                                <BooleanToVisibilityConverter />
+                            </Binding.Converter>
+                        </Binding>
+                    </TextBlock.Visibility>
+                WARNING: You can provide your custom connection settings for this example 
+                by specifying the connectionString property of the "DXGridServerModeDB" 
+                connection in the Web.config file of this web service.
+                </TextBlock>
+                <TextBlock Name="logHeaderText" />
+                <ScrollViewer Name="scrollViewer" MaxHeight="150" CanContentScroll="True">
+                    <ItemsControl ItemsSource="{Binding Log}" />
+                </ScrollViewer>
+                <StackPanel Margin="0,10,0,0" Orientation="Horizontal" TextBlock.FontWeight="Bold">
+                    <TextBlock>Total Bytes Sent:</TextBlock>
+                    <TextBlock Margin="10,0,0,0" 
+                               Text="{Binding TotalBytesSent, StringFormat=### ### ##0}" />
+                    <TextBlock Margin="30,0,0,0">Total Bytes Received:</TextBlock>
+                    <TextBlock Margin="10,0,0,0" 
+                               Text="{Binding TotalBytesReceived, StringFormat=### ### ##0}" />
+                </StackPanel>
+            </StackPanel>
+        </Expander>
+        <dxg:GridControl Name="grid">
+            <dxg:GridControl.Columns>
+                <dxg:GridColumn x:Name="colid" FieldName="OID" Width="60" 
+                                MinWidth="60" 
+                                AllowGrouping="False" AllowColumnFiltering="False" 
+                                AutoFilterCondition="Equals" 
+                                ImmediateUpdateAutoFilter="False" />
+                <dxg:GridColumn x:Name="colFrom" FieldName="From" 
+                                ImmediateUpdateAutoFilter="False" />
+                <dxg:GridColumn x:Name="colSubject" FieldName="Subject" Width="300" 
+                                EditSettings="{dxe:TextSettings TextWrapping=Wrap}"
+                                AutoFilterCondition="Contains" 
+                                ImmediateUpdateAutoFilter="False" />
+                <dxg:GridColumn x:Name="colSent" FieldName="Sent" Width="80"  
+                                EditSettings="{dxe:DateSettings DisplayFormat=d}" 
+                                AutoFilterCondition="Equals" 
+                                ImmediateUpdateAutoFilter="False" />
+                <dxg:GridColumn x:Name="colSize" FieldName="Size" Width="60" 
+                                AllowGrouping="False" AutoFilterCondition="Equals" 
+                                ImmediateUpdateAutoFilter="False" />
+                <dxg:GridColumn x:Name="colHasAttachment" FieldName="HasAttachment" Width="130" 
+                                AutoFilterCondition="Equals" 
+                                ImmediateUpdateAutoFilter="False">
+                    <dxg:GridColumn.EditSettings>
+                        <dxe:CheckEditSettings />
+                    </dxg:GridColumn.EditSettings>
+                </dxg:GridColumn>
+            </dxg:GridControl.Columns>
+            <dxg:GridControl.GroupSummary>
+                <dxg:GridSummaryItem FieldName="Size" SummaryType="Sum">
+                </dxg:GridSummaryItem>
+                <dxg:GridSummaryItem FieldName="From" SummaryType="Count" />
+            </dxg:GridControl.GroupSummary>
+            <dxg:GridControl.TotalSummary>
+                <dxg:GridSummaryItem FieldName="From" SummaryType="Count" />
+            </dxg:GridControl.TotalSummary>
+            <dxg:GridControl.View>
+                <dxg:TableView NavigationStyle="Row" ShowTotalSummary="True" 
+                               ShowAutoFilterRow="True" />
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+    </DockPanel>
+</Window>
