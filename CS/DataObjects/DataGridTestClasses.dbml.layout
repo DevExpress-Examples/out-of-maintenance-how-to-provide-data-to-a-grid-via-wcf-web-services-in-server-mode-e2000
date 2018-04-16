@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataGridTestClasses">
+  <DataContextMoniker Name="/DataGridTestClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="590d94d9-f592-4255-be69-eb513d2c6dab" absoluteBounds="0.75, 1, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DataGridTestClassesDataContext/ServerSideGridTest" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d2b5da47-8d2d-40ab-ae05-21aa4d62bfad" absoluteBounds="0.765, 1.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

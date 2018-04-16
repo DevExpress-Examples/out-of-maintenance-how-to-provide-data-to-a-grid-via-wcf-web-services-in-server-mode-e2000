@@ -1,0 +1,14 @@
+﻿<Window x:Class="DXGridSample.ChooseConnectionWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ChooseConnectionWindow" Height="300" Width="300" 
+    WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <UniformGrid Rows="2">
+        <Button Name="localButton" Click="localButton_Click">
+            Local WCF Service
+        </Button>
+        <Button Name="internetButton" Click="internetButton_Click">
+            Internet WCF Service (internet connection needed)
+        </Button>
+    </UniformGrid>
+</Window>
