@@ -1,3 +1,11 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Window1.xaml](./CS/DXGridSample/Window1.xaml) (VB: [Window1.xaml](./VB/DXGridSample/Window1.xaml))
+* [Window1.xaml.cs](./CS/DXGridSample/Window1.xaml.cs) (VB: [Window1.xaml](./VB/DXGridSample/Window1.xaml))
+* [DXGridService.svc](./CS/WcfSample/DXGridService.svc) (VB: [DXGridService.svc](./VB/WcfSample/DXGridService.svc))
+* [DXGridService.svc.cs](./CS/WcfSample/DXGridService.svc.cs) (VB: [DXGridService.svc](./VB/WcfSample/DXGridService.svc))
+<!-- default file list end -->
 # How to provide data to a grid via WCF Web Services in server mode
 
 
