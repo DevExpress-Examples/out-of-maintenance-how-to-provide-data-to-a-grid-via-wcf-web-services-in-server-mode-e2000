@@ -1,3 +1,19 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [SimpleExampleContext.cs](./CS/DataObjects/SimpleExampleContext.cs) (VB: [SimpleExampleContext.vb](./VB/DataObjects/SimpleExampleContext.vb))
+* [ChooseConnectionWindow.xaml](./CS/DXGridSample/ChooseConnectionWindow.xaml) (VB: [ChooseConnectionWindow.xaml](./VB/DXGridSample/ChooseConnectionWindow.xaml))
+* [ChooseConnectionWindow.xaml.cs](./CS/DXGridSample/ChooseConnectionWindow.xaml.cs) (VB: [ChooseConnectionWindow.xaml](./VB/DXGridSample/ChooseConnectionWindow.xaml))
+* [Window1.xaml](./CS/DXGridSample/Window1.xaml) (VB: [Window1.xaml.vb](./VB/DXGridSample/Window1.xaml.vb))
+* [Window1.xaml.cs](./CS/DXGridSample/Window1.xaml.cs) (VB: [Window1.xaml.vb](./VB/DXGridSample/Window1.xaml.vb))
+* [GZipMessageEncoderFactory.cs](./CS/GZipEncoder/GZipMessageEncoderFactory.cs) (VB: [GZipMessageEncoderFactory.vb](./VB/GZipEncoder/GZipMessageEncoderFactory.vb))
+* [GZipMessageEncodingBindingElement.cs](./CS/GZipEncoder/GZipMessageEncodingBindingElement.cs) (VB: [GZipMessageEncodingBindingElementImporter.vb](./VB/GZipEncoder/GZipMessageEncodingBindingElementImporter.vb))
+* [GZipMessageEncodingBindingElementImporter.cs](./CS/GZipEncoder/GZipMessageEncodingBindingElementImporter.cs) (VB: [GZipMessageEncodingBindingElementImporter.vb](./VB/GZipEncoder/GZipMessageEncodingBindingElementImporter.vb))
+* [IObjectSource.cs](./CS/InterLinq.Objects/Objects/IObjectSource.cs) (VB: [IObjectSource.vb](./VB/InterLinq.Objects/Objects/IObjectSource.vb))
+* [ObjectQueryHandler.cs](./CS/InterLinq.Objects/Objects/ObjectQueryHandler.cs) (VB: [ObjectQueryHandler.vb](./VB/InterLinq.Objects/Objects/ObjectQueryHandler.vb))
+* [DXGridService.svc.cs](./CS/WcfSample/DXGridService.svc.cs) (VB: [DXGridService.svc.vb](./VB/WcfSample/DXGridService.svc.vb))
+* [OutlookDataGenerator.cs](./CS/WcfSample/OutlookDataGenerator.cs) (VB: [OutlookDataGenerator.vb](./VB/WcfSample/OutlookDataGenerator.vb))
+<!-- default file list end -->
 # How to provide data to a grid via WCF Web Services in server mode
 
 
