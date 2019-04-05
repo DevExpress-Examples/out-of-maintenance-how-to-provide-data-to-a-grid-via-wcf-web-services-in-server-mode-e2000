@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [MainWindow.xaml](./CS/E2000/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/E2000/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/E2000/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/E2000/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/E2000/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/E2000/MainWindow.xaml.vb))
 * [MessagesWcfDataService.svc.cs](./CS/E2000Web/MessagesWcfDataService.svc.cs) (VB: [MessagesWcfDataService.svc.vb](./VB/E2000Web/MessagesWcfDataService.svc.vb))
 <!-- default file list end -->
 # How to provide data to a grid via WCF Web Services in server mode
