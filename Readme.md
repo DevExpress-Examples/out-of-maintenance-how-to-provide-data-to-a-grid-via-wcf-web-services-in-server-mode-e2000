@@ -2,10 +2,10 @@
 *Files to look at*:
 
 * [SimpleExampleContext.cs](./CS/DataObjects/SimpleExampleContext.cs) (VB: [SimpleExampleContext.vb](./VB/DataObjects/SimpleExampleContext.vb))
-* [ChooseConnectionWindow.xaml](./CS/DXGridSample/ChooseConnectionWindow.xaml) (VB: [ChooseConnectionWindow.xaml.vb](./VB/DXGridSample/ChooseConnectionWindow.xaml.vb))
+* [ChooseConnectionWindow.xaml](./CS/DXGridSample/ChooseConnectionWindow.xaml) (VB: [ChooseConnectionWindow.xaml](./VB/DXGridSample/ChooseConnectionWindow.xaml))
 * [ChooseConnectionWindow.xaml.cs](./CS/DXGridSample/ChooseConnectionWindow.xaml.cs) (VB: [ChooseConnectionWindow.xaml.vb](./VB/DXGridSample/ChooseConnectionWindow.xaml.vb))
 * [Window1.xaml](./CS/DXGridSample/Window1.xaml) (VB: [Window1.xaml](./VB/DXGridSample/Window1.xaml))
-* [Window1.xaml.cs](./CS/DXGridSample/Window1.xaml.cs) (VB: [Window1.xaml](./VB/DXGridSample/Window1.xaml))
+* [Window1.xaml.cs](./CS/DXGridSample/Window1.xaml.cs) (VB: [Window1.xaml.vb](./VB/DXGridSample/Window1.xaml.vb))
 * [GZipMessageEncoderFactory.cs](./CS/GZipEncoder/GZipMessageEncoderFactory.cs) (VB: [GZipMessageEncoderFactory.vb](./VB/GZipEncoder/GZipMessageEncoderFactory.vb))
 * [GZipMessageEncodingBindingElement.cs](./CS/GZipEncoder/GZipMessageEncodingBindingElement.cs) (VB: [GZipMessageEncodingBindingElement.vb](./VB/GZipEncoder/GZipMessageEncodingBindingElement.vb))
 * [GZipMessageEncodingBindingElementImporter.cs](./CS/GZipEncoder/GZipMessageEncodingBindingElementImporter.cs) (VB: [GZipMessageEncodingBindingElementImporter.vb](./VB/GZipEncoder/GZipMessageEncodingBindingElementImporter.vb))
